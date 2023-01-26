@@ -3,6 +3,15 @@ body {
   font-size: 16px;
 }
 
+header {
+  text-align: center;
+  margin: 2em;
+}
+
+span {
+  color:#ff6961
+}
+
 textarea {
   background: transparent;
   border: none;
@@ -10,6 +19,10 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+}
+
+.container-fluid {
+  border-top: 10px solid black;
 }
 
 .description {
@@ -56,4 +69,9 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+#saved {
+  text-align: center;
+  display:none;
 }
