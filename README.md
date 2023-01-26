@@ -12,6 +12,7 @@ n/a
 ## Usage
 
 When the user opens the application, they will see today's date at the top of the page. The user then can add events for any of the work hours and save them. When the user refreshes the page, the event will stay saved in the initial time block. Based on the current hour, each time block will indicate whether it belongs to the past, present, or future through different background colours: grey, red, and green, respectively.  
+https://lmintsys.github.io/work-day-scheduler/
 ![day](assets/sample-day.jpg)
 
 ## Credits
