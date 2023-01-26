@@ -26,4 +26,20 @@ $(function () {
       $(this).addClass("future");
     }
 
+    $(this)
+      .find("button")
+      .click(function () {
+        var hourEvent = textArea.val();
+        console.log(hourEvent);
+        var timeBlockEvents = Object.assign(savedTimeBlockEvents, {
+          [timeBlockHour]: hourEvent,
+        });
+
+        localStorage.setItem(
+          "timeBlockEvents",
+          JSON.stringify(timeBlockEvents)
+        );
+
+        $("#saved").show();
+      });
 });
