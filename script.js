@@ -26,6 +26,17 @@ $(function () {
       $(this).addClass("future");
     }
 
+    var textArea = $(this).find("textarea");
+
+    if (
+      typeof savedTimeBlockEvents === "object" &&
+      savedTimeBlockEvents[timeBlockHour]
+    ) {
+      textArea.val(savedTimeBlockEvents[timeBlockHour]);
+    }
+
+    // When the "save" button is pressed, save event's input into local storage and
+    // add a message for the user
     $(this)
       .find("button")
       .click(function () {
@@ -42,4 +53,5 @@ $(function () {
 
         $("#saved").show();
       });
+  });
 });
